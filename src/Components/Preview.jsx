@@ -19,14 +19,14 @@ function Preview(props) {
       {props.index % 2 === 0 ? ( // If previewType is even
         <>
           <Techno technos={technos} gitlink={gitlink}/>
-          <Illustration projetNumber={props.index} />
-          <PreviewDescription description={description} projetNumber={props.index} inclus={props.inclus}/>
+          <Illustration projectNumber={props.index} />
+          <PreviewDescription description={description} projectNumber={props.index} inclus={props.inclus}/>
         </>
       ) : ( // If previewType is odd
         <>
-          <Illustration projetNumber={props.index} />
+          <Illustration projectNumber={props.index} />
           <Techno technos={technos} gitlink={gitlink}/>
-          <PreviewDescription description={description} projetNumber={props.index} inclus={props.inclus}/>
+          <PreviewDescription description={description} projectNumber={props.index} inclus={props.inclus}/>
         </>
       )}
     </div>
