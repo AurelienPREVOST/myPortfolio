@@ -1,16 +1,29 @@
-import React from 'react'
+import React from 'react';
+import illuMain1 from "../assets/illustrations/projet1.gif";
+import illuMain2 from "../assets/illustrations/projet2.png";
+import illuMain3 from "../assets/illustrations/projet3.png";
 
 function Illustration(props) {
-
-    const projetNumber = props.projetNumber
+  const projectNumber = props.projectNumber;
+  console.log(projectNumber)
+  console.log(typeof(projectNumber))
 
   return (
     <div className="imgContainer">
-        {projetNumber == 0 && <img src={`src/assets/illustrations/projet${parseInt(projetNumber) + 1}.gif`} alt={`Projet ${parseInt(projetNumber)+ 1}`} />}
-        {projetNumber != 0 && <img src={`src/assets/illustrations/projet${parseInt(projetNumber) + 1}.png`} alt={`Projet ${parseInt(projetNumber)+ 1}`} />}
-        
+      {(() => {
+        switch (projectNumber) {
+          case "0":
+            return <img src={illuMain1} alt={`Projet ${parseInt(projectNumber) + 1}`} />;
+          case "1":
+            return <img src={illuMain2} alt={`Projet ${parseInt(projectNumber) + 1}`} />;
+          case "2":
+            return <img src={illuMain3} alt={`Projet ${parseInt(projectNumber) + 1}`} />;
+          default:
+            return null;
+        }
+      })()}
     </div>
-  )
+  );
 }
 
-export default Illustration
+export default Illustration;
