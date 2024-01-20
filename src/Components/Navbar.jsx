@@ -1,22 +1,28 @@
 import React from 'react';
 import { PDFDocument } from 'pdf-lib';
+import cvAurelien from "../assets/cvPrevostAurelien.pdf";
 
 function Navbar() {
   const handleDownloadCV = async () => {
-    const pdfBytes = await fetch('/src/assets/cvPrevostAurelien.pdf').then((res) => res.arrayBuffer());
+    try {
+      const pdfResponse = await fetch(cvAurelien);
+      const pdfBytes = await pdfResponse.arrayBuffer();
 
-    const pdfDoc = await PDFDocument.load(pdfBytes);
-    const pdfBlob = await pdfDoc.save();
+      const pdfDoc = await PDFDocument.load(pdfBytes);
+      const pdfBlob = await pdfDoc.save();
 
-    const pdfUrl = URL.createObjectURL(new Blob([pdfBlob]));
-    const downloadLink = document.createElement('a');
-    downloadLink.href = pdfUrl;
-    downloadLink.download = 'mon_cv.pdf';
+      const pdfUrl = URL.createObjectURL(new Blob([pdfBlob]));
+      const downloadLink = document.createElement('a');
+      downloadLink.href = pdfUrl;
+      downloadLink.download = 'mon_cv.pdf';
 
-    document.body.appendChild(downloadLink);
-    downloadLink.click();
+      document.body.appendChild(downloadLink);
+      downloadLink.click();
 
-    document.body.removeChild(downloadLink);
+      document.body.removeChild(downloadLink);
+    } catch (error) {
+      console.error('Error downloading PDF:', error);
+    }
   };
 
   const handlePortfolioClick = () => {
@@ -65,7 +71,7 @@ function Navbar() {
 
   return (
     <nav id="Navbar">
-      <ul style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+      <ul>
         <li onClick={handleDownloadCV} style={{ cursor: 'pointer' }}>
           Qui suis-je
         </li>

@@ -58,7 +58,7 @@ function PreviewDescription(props) {
     <>
       <p className="description">{description}</p>
       <div className="inclus-container">
-        <h3 style={{margin: "1rem"}}>Inclus:</h3>
+        <h3>Inclus:</h3>
         <ul>
           {inclus.map((item, index) => (
             <li key={index}>{item}</li>

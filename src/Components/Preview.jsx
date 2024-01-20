@@ -16,19 +16,10 @@ function Preview(props) {
     <div className={`preview ${previewType}`}>
       <Title title={title} />
 
-      {props.index % 2 === 0 ? ( // If previewType is even
-        <>
           <Techno technos={technos} gitlink={gitlink}/>
           <Illustration projectNumber={props.index} />
           <PreviewDescription description={description} projectNumber={props.index} inclus={props.inclus}/>
-        </>
-      ) : ( // If previewType is odd
-        <>
-          <Illustration projectNumber={props.index} />
-          <Techno technos={technos} gitlink={gitlink}/>
-          <PreviewDescription description={description} projectNumber={props.index} inclus={props.inclus}/>
-        </>
-      )}
+
     </div>
   );
 }
