@@ -1,8 +1,22 @@
-# React + Vite
+# PORTFOLIO PREVOST AURELIEN
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Cher recruteur ou simplement cher curieux !  
+  
+Sur ce repository, vous trouverez l'essentiel de mes projets et créations.  
+Comme ce repository n'est pas en ligne et est sujet à des modifications futures,  
+pour accéder au site, veuillez suivre les commandes suivantes dans votre terminal.  
 
-Currently, two official plugins are available:
+Pour telecharger mon CV n'hesitez pas à cliquez sur la bannière "qui-suis-je" afin d'obtenir une copie PDF  
+ou de suivre le lien suivant:
+https://github.com/AurelienPREVOST/Portfolio/blob/master/src/assets/cvPrevostAurelien.pdf
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+```
+mkdir PortfolioPrevostAurelien
+cd PortfolioPrevostAurelien
+git clone https://github.com/AurelienPREVOST/Portfolio.git
+npm i
+npm run dev
+```
+
+![localhost_5173](https://github.com/AurelienPREVOST/Portfolio/assets/102169301/bab8fe98-48e5-40eb-85ed-2424022d4375)
