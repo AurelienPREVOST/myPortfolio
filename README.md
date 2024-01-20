@@ -3,8 +3,10 @@
 ### Cher recruteur ou simplement cher curieux !  
   
 Sur ce repository, vous trouverez l'essentiel de mes projets et créations.  
-Comme ce repository n'est pas en ligne et est sujet à des modifications futures,  
-pour accéder au site, veuillez suivre les commandes suivantes dans votre terminal.  
+
+URL => https://aurelienprevost.github.io/myPortfolio/
+
+pour accéder au site en local, veuillez suivre les commandes suivantes dans votre terminal.  
 
 Pour telecharger mon CV n'hesitez pas à cliquez sur la bannière "qui-suis-je" afin d'obtenir une copie PDF  
 ou de suivre le lien suivant:
