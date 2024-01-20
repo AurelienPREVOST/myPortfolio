@@ -7,25 +7,18 @@ function Techno(props) {
 
   return (
     <div className="technos">
-      <h3 style={{paddingBottom: '2rem'}}>Technos et outils:</h3>
-      <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
+      <h3>Technos et outils:</h3>
+      <div>
         {technos.map((techno, index) => (
           <span
             key={index}
-            style={{
-              display: 'inline-block',
-              padding: '8px',
-              borderRadius: "5px",
-              boxShadow: '-2px 5px 5px grey', 
-              backgroundColor: 'crimson',
-              color: 'white',
-            }}
+            className="technoItem"
           >
             {techno}
           </span>
         ))}
       </div>
-      <div style={{ marginTop: '50px', textAlign: 'center' }}>
+      <div className="codeLink">
         {gitlink && <a href={gitlink} target="_blank">Voir le code</a>}
       </div>
     </div>
