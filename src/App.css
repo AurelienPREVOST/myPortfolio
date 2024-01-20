@@ -36,7 +36,7 @@
     height: 40vh;
     display: flex;
     flex-direction: column;
-    background-image: url('src/assets/illustrations/banner.png');
+    background-image: url('https://github.com/AurelienPREVOST/myPortfolio/blob/main/src/assets/illustrations/banner.png?raw=true');
     background-repeat: no-repeat;
     background-position: left;
     background-size: cover; 
