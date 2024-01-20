@@ -16,7 +16,7 @@ https://github.com/AurelienPREVOST/Portfolio/blob/master/src/assets/cvPrevostAur
 ```
 mkdir PortfolioPrevostAurelien
 cd PortfolioPrevostAurelien
-git clone https://github.com/AurelienPREVOST/Portfolio.git
+git clone https://github.com/AurelienPREVOST/myPortfolio.git
 npm i
 npm run dev
 ```
