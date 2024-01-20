@@ -21,4 +21,5 @@ npm i
 npm run dev
 ```
 
-![localhost_5173](https://github.com/AurelienPREVOST/Portfolio/assets/102169301/bab8fe98-48e5-40eb-85ed-2424022d4375)
+![127 0 0 1_5174_](https://github.com/AurelienPREVOST/myPortfolio/assets/102169301/6a5b2c9e-745a-4c1d-9290-23e541f7e398)
+
