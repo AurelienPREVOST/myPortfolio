@@ -18,6 +18,7 @@ import penpot from '../assets/illustrations/logos/penpot.svg'
 import postgresql from '../assets/illustrations/logos/postgresql.svg'
 import prisma from '../assets/illustrations/logos/prisma.svg'
 import rails from '../assets/illustrations/logos/rails.svg'
+import react from '../assets/illustrations/logos/react.svg'
 import redux from '../assets/illustrations/logos/redux.svg'
 import ruby from '../assets/illustrations/logos/ruby.svg'
 import solidworks from '../assets/illustrations/logos/solidworks.svg'
@@ -38,7 +39,7 @@ function IconLoop() {
     document.querySelector(".logos").appendChild(copy);
   }, [])
 
-  const icons = [bootstrap, cobol, css3, docker, expo, figma, github, gitlab, heroku, html5, linux, mongodb, mysql, node, ovh, penpot, postgresql, prisma, rails, redux, ruby, solidworks, sql, stripe, tailwind, terminal, trello, typescript, ubuntu, ue, vite];
+  const icons = [bootstrap, cobol, css3, docker, expo, figma, github, gitlab, heroku, html5, linux, mongodb, mysql, node, ovh, penpot, postgresql, prisma, rails, react, redux, ruby, solidworks, sql, stripe, tailwind, terminal, trello, typescript, ubuntu, ue, vite];
 
   return (
     <div className="logos">
