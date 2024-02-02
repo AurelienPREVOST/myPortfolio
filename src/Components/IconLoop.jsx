@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import angular from '../assets/illustrations/logos/angular.svg'
 import bootstrap from '../assets/illustrations/logos/bootstrap.svg'
 import cobol from '../assets/illustrations/logos/cobol.svg'
 import css3 from '../assets/illustrations/logos/css3.svg'
@@ -39,7 +40,7 @@ function IconLoop() {
     document.querySelector(".logos").appendChild(copy);
   }, [])
 
-  const icons = [bootstrap, cobol, css3, docker, expo, figma, github, gitlab, heroku, html5, linux, mongodb, mysql, node, ovh, penpot, postgresql, prisma, rails, react, redux, ruby, solidworks, sql, stripe, tailwind, terminal, trello, typescript, ubuntu, ue, vite];
+  const icons = [angular, bootstrap, cobol, css3, docker, expo, figma, github, gitlab, heroku, html5, linux, mongodb, mysql, node, ovh, penpot, postgresql, prisma, rails, react, redux, ruby, solidworks, sql, stripe, tailwind, terminal, trello, typescript, ubuntu, ue, vite];
 
   return (
     <div className="logos">
