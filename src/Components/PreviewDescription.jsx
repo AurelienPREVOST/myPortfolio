@@ -61,7 +61,9 @@ import illu15b from "../assets/illustrations/projet15b.png";
 // import illu15c from "../assets/illustrations/forbidden.jpg";
 
 // import illu16a from "../assets/illustrations/forbidden.jpg";
-import illu16b from "../assets/illustrations/projet16b.png";
+import illu16a from "../assets/illustrations/projet16a.jpg";
+import illu16b from "../assets/illustrations/projet16b.jpg";
+import illu16c from "../assets/illustrations/projet16c.jpg";
 // import illu16c from "../assets/illustrations/forbidden.jpg";
 
 // import illu17a from "../assets/illustrations/forbidden.jpg";
@@ -123,7 +125,7 @@ function PreviewDescription(props) {
       illustrations = [illu15b];
       break;
     case "15":
-      illustrations = [illu16b];
+      illustrations = [illu16a, illu16b, illu16c];
       break;
     // case "16":
       // illustrations = [illu17a, illu17b, illu17c];
@@ -155,13 +157,14 @@ function PreviewDescription(props) {
     <>
       <p className="description">{description}</p>
       <div className="inclus-container">
-        <h3>Inclus:</h3>
+        {inclus.length > 0 && <h3>Inclus:</h3>} {/* Afficher h3 seulement si input.length > 0 */}
         <ul>
           {inclus.map((item, index) => (
             <li key={index}>{item}</li>
           ))}
         </ul>
       </div>
+
   
         <div className="additionalIllustrationsContainer">
         {illustrations[0] && (

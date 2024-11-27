@@ -39,7 +39,7 @@ function Main() {
         title="Logiciel CRM"   
         technos={['Angular', 'Koa']}  
         description="Dans le cadre d’un projet professionnel, j’ai participé au développement d’un logiciel CRM responsive conçu pour intégrer divers tableaux de bord interactifs. L'objectif était de fournir une vue d'ensemble des retours clients au travers de statistiques collectées lors des interactions avec un réseau de points de vente internationaux. Le logiciel permettait de visualiser les données sous forme de tableaux et de graphiques, facilitant ainsi l'analyse des tendances et des retours. Bien que le projet n'ait pas abouti à une mise en production en raison de l'absence d'accord commercial, il a permis d'explorer des technologies avancées pour la gestion de données en temps réel et l’analyse d'interactions clients. Notez que je ne peux pas partager de visuels ou d'exemples de ce projet en raison de la propriété intellectuelle associée."   
-        inclus={[]}   
+        inclus={['chart.js']}   
         gitlink=''/>
 
       <Preview  
@@ -135,7 +135,7 @@ function Main() {
         title="Animaux en Realité augmenté" 
         technos={['AR JS', 'Node JS', 'express']} 
         description="Réalisation d'un livre à destination de mes filles dans lequel un scan de la trame graphique fait apparaitre sur l'ecran un animal en 3D" 
-        inclus={["pdf-lib"]} 
+        inclus={["réalité augmenté"]} 
         gitlink='https://github.com/AurelienPREVOST/KidsAnimalsDiscover_AR'/>
 
       <Preview 

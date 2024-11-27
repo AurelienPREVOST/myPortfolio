@@ -262,7 +262,7 @@ h2, h3 {
   }
 
   .additionalIllustrationsContainer {
-    min-width: 100%;
+    /* min-width: 100%; */
     display: flex;
     overflow-x: auto;
     align-items: center;
@@ -273,13 +273,22 @@ h2, h3 {
   .additionalIllustration {
     display: flex;
     align-items: center;
-    max-width: 30%;
+    /* max-width: 30%; */
     height: 100%;
     margin: 0 2rem; /* Adjust margin between illustrations if needed */
     img {
-      max-width: 100%;
+      /* max-width: 100%; */
       max-height: 100%;
 
+    }
+  }
+
+  @media screen and (min-width:720px) {
+    .additionalIllustration {
+      max-width: 30%;
+      img {
+        max-width: 100%;
+      }  
     }
   }
 
