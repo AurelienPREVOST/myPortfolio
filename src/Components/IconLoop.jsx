@@ -30,6 +30,12 @@ import terminal from '../assets/illustrations/logos/terminal.svg'
 import trello from '../assets/illustrations/logos/trello.svg'
 import typescript from '../assets/illustrations/logos/typescript.svg'
 import ubuntu from '../assets/illustrations/logos/ubuntu.svg'
+import dbeaver from '../assets/illustrations/logos/dbeaver.png'
+import filezilla from '../assets/illustrations/logos/FileZilla.png'
+import winscp from '../assets/illustrations/logos/winscp.png'
+import jobtalend from '../assets/illustrations/logos/jobTalend.svg'
+import powerBI from '../assets/illustrations/logos/powerBI.svg'
+import SQLite3 from '../assets/illustrations/logos/SQLite3.svg'
 import ue from '../assets/illustrations/logos/ue.svg'
 import vite from '../assets/illustrations/logos/vite.svg'
 
@@ -40,7 +46,7 @@ function IconLoop() {
     document.querySelector(".logos").appendChild(copy);
   }, [])
 
-  const icons = [angular, bootstrap, cobol, css3, docker, expo, figma, github, gitlab, heroku, html5, linux, mongodb, mysql, node, ovh, penpot, postgresql, prisma, rails, react, redux, ruby, solidworks, sql, stripe, tailwind, terminal, trello, typescript, ubuntu, ue, vite];
+  const icons = [dbeaver, filezilla, winscp, jobtalend, powerBI, SQLite3, angular, bootstrap, cobol, css3, docker, expo, figma, github, gitlab, heroku, html5, linux, mongodb, mysql, node, ovh, penpot, postgresql, prisma, rails, react, redux, ruby, solidworks, sql, stripe, tailwind, terminal, trello, typescript, ubuntu, ue, vite];
 
   return (
     <div className="logos">
